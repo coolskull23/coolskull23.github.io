@@ -32,14 +32,15 @@ body {
   word-spacing: 35px;
 }
 
-@media only screen and (max-width: 200px) {
+@media only screen and (min-width: 375px) 
+and (max-width: 812px){
 .ul {
   display: none;
-  list-style-type: none;
+  visibility: hidden !important;
   width: 450px;
   margin: 0px;
   padding: 0px;
-}
+  }
 }
 
 .li {
