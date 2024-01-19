@@ -6,12 +6,13 @@ body {
   height: 200vh;
 }
 
-/* */
+/* header */
 
 .header {
   position: fixed;
   text-align: center;
   width: 100%;
+  font-family: monospace;
 }
 
 .img {
@@ -26,7 +27,7 @@ body {
 
 .nav-two {
   display: inline-block;
-  margin: 40px 0%;
+  margin: 20px 0%;
   text-align: center;
   top: 20px;
   word-spacing: 35px;
@@ -62,4 +63,51 @@ and (max-width: 812px){
 
 #bg-two {
   background-image: url("images/bg2.jpg");
+}
+
+/* First Page */
+
+.page-one-info {
+  color: white;
+  position: absolute;
+  top: 55.6vh;
+  left: 8vh;
+  font-size: 19px;
+  letter-spacing: 2px;
+  font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  container-name: info
+}
+
+.page-one-h1 {
+  display: inline-block;
+  color: white;
+  position: absolute;
+  top: 55vh;
+  left: 8vh;
+  font-size: 50px;
+  word-spacing: -6px;
+  font-family: monospace;
+}
+
+.page-one-btn {
+  position: absolute;
+  font-family: monospace;
+  color: white;
+  outline: 2px white solid;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.0);
+  font-size: 15px;
+  top: 75.4vh;
+  left: 8vh;
+  height: 12px;
+  width: 165px;
+  font-weight: bold;
+  transition: background-color 2s ease-out 100ms;
+  transition: color 2s ease-out 100ms;
+}
+
+.page-one-btn:hover {
+  background-color: white;
+  color:black
 }
