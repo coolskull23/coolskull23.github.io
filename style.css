@@ -135,7 +135,7 @@ and (max-width: 812px){
 and (max-width: 812px){
 .page-one-info {
   text-align: left;
-  top: 450px;
+  top: 300px;
   margin-left: 120px;
 }
 }
@@ -144,7 +144,7 @@ and (max-width: 812px){
 and (max-width: 812px){
 .page-one-h1 {
   text-align: left;
-  top: 450px;
+  top: 300px;
   margin-left: 120px;
 }
 }
@@ -153,7 +153,7 @@ and (max-width: 812px){
 and (max-width: 812px){
 .page-one-btn div {
   text-align: center;
-  top: 450px;
+  top: 300px;
   margin-left: 120px;
 }
 }
