@@ -5,6 +5,16 @@ body {
   height: 200vh;
 }
 
+@media only screen and (min-width: 0px) 
+and (max-width: 812px){
+body {
+  margin: 0;
+  padding: 0;
+  height: 200vh;
+  width: fit-content;
+  }
+}
+
 /* header */
 
 .header {
@@ -32,7 +42,7 @@ body {
   word-spacing: 35px;
 }
 
-@media only screen and (min-width: 375px) 
+@media only screen and (min-width: 0px) 
 and (max-width: 812px){
 .ul {
   display: none;
@@ -82,7 +92,7 @@ and (max-width: 812px){
   position: relative;
   top: 575px;
   margin: 0px 305px;
-  width: 190px;
+  width: fit-content;
   font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 19px;
   letter-spacing: 2px;
@@ -100,7 +110,7 @@ and (max-width: 812px){
   font-size: 50px;
   color: white;
   float: initial;
-  line-height: 1;
+  vertical-align: top; 
 }
 
 .page-one-btn div {
@@ -119,7 +129,33 @@ and (max-width: 812px){
   text-align: center;
   transition: background-color 2s ease-out 100ms;
   transition: color 2s ease-out 100ms;
-  min-width: 130px;
+}
+
+@media only screen and (min-width: 0px) 
+and (max-width: 812px){
+.page-one-info {
+  text-align: left;
+  top: 450px;
+  margin-left: 120px;
+}
+}
+
+@media only screen and (min-width: 0px) 
+and (max-width: 812px){
+.page-one-h1 {
+  text-align: left;
+  top: 450px;
+  margin-left: 120px;
+}
+}
+
+@media only screen and (min-width: 0px) 
+and (max-width: 812px){
+.page-one-btn div {
+  text-align: center;
+  top: 450px;
+  margin-left: 120px;
+}
 }
 
 .page-one-btn div:hover {
