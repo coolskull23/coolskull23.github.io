@@ -4,7 +4,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: black;
-  height: 200vh;
 }
 
 @media only screen and (min-width: 0px) 
@@ -12,7 +11,6 @@ and (max-width: 812px){
 body {
   margin: 0;
   padding: 0;
-  height: 200vh;
   width: fit-content;
   }
 }
@@ -70,17 +68,17 @@ and (max-width: 812px){
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 #bg-two {
+  height: 100vh;
+  width: 100%;
   background: url("images/bg2.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-  height: 100vh;
-  width: 100%;
+  background-size: 100% 100%;
 }
 
 /* First Page */
@@ -137,9 +135,35 @@ and (max-width: 812px){
 
 @media only screen and (min-width: 0px) 
 and (max-width: 812px){
+.page-one {
+  height: 203vh;
+  width: 93.8vh;
+  background: url("images/bg.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: initial;
+}
+}
+
+@media only screen and (min-width: 0px) 
+and (max-width: 812px){
+#bg-two {
+  height: 203vh;
+  width: 93.8vh;
+  background: url("images/bg2.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+}
+
+@media only screen and (min-width: 0px) 
+and (max-width: 812px){
 .page-one-info {
   text-align: left;
-  top: 300px;
+  top: 800px;
   margin-left: 30px;
 }
 }
@@ -148,7 +172,7 @@ and (max-width: 812px){
 and (max-width: 812px){
 .page-one-h1 {
   text-align: left;
-  top: 300px;
+  top: 800px;
   margin-left: 30px;
 }
 }
@@ -157,7 +181,7 @@ and (max-width: 812px){
 and (max-width: 812px){
 .page-one-btn div {
   text-align: center;
-  top: 300px;
+  top: 800px;
   margin-left: 30px;
 }
 }
