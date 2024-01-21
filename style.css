@@ -87,7 +87,7 @@ and (max-width: 812px){
 .page-one {
   height: 100vh;
   width: 100%;
-  background: url("images/bg.jpg") no-repeat center fixed ;
+  background: url("images/bg.jpg") no-repeat center center ;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -142,7 +142,7 @@ and (max-width: 812px){
 .page-one {
   height: 203vh;
   width: 93.8vh;
-  background: url("images/bg.jpg") no-repeat center fixed ;
+  background: url("images/bg.jpg") no-repeat center center ;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -173,7 +173,7 @@ and (max-width: 812px){
 .page-two {
   height: 100vh;
   width: 100%;
-  background: url("images/bg2.jpg") no-repeat center fixed ;
+  background: url("images/bg2.jpg") no-repeat center center ;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -223,7 +223,7 @@ and (max-width: 812px){
 .page-two {
   height: 203vh;
   width: 93.8vh;
-  background: url("images/bg2.jpg") no-repeat center fixed ;
+  background: url("images/bg2.jpg") no-repeat center center ;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -254,7 +254,7 @@ and (max-width: 812px){
 .page-three {
   height: 100vh;
   width: 100%;
-  background: url("images/bg3.jpg") no-repeat center fixed ;
+  background: url("images/bg3.jpg") no-repeat center center ;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -304,7 +304,7 @@ and (max-width: 812px){
 .page-three {
   height: 203vh;
   width: 93.8vh;
-  background: url("images/bg3.jpg") no-repeat center fixed ;
+  background: url("images/bg3.jpg") no-repeat center center ;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -335,7 +335,7 @@ and (max-width: 812px){
 .page-four {
   height: 100vh;
   width: 100%;
-  background: url("images/bg4.jpg") no-repeat center fixed ;
+  background: url("images/bg4.jpg") no-repeat center center ;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -385,7 +385,7 @@ and (max-width: 812px){
 .page-four {
   height: 203vh;
   width: 93.8vh;
-  background: url("images/bg4.jpg") no-repeat center fixed ;
+  background: url("images/bg4.jpg") no-repeat center center ;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
