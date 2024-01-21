@@ -39,7 +39,36 @@ body {
   margin: 20px 0%;
   text-align: center;
   top: 20px;
-  word-spacing: 35px;
+}
+
+.ul a {
+  color: white;
+  font-family: monospace;
+  font-size: 20px;
+  padding: 0px 15px;
+  position: relative;
+  text-decoration: none;
+}
+
+.ul a:hover {
+  color: white;
+}
+
+.ul a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 85%;
+  height: 2px;
+  bottom: 0;
+  left: 8%;
+  background-color: white;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.ul a:hover::before {
+  transform: scaleX(1);
 }
 
 @media only screen and (min-width: 0px) 
@@ -53,58 +82,28 @@ and (max-width: 812px){
   }
 }
 
-.li {
-  color: white;
-  font-family: monospace;
-  font-size: 20px;
-}
-
-/* Pages */
+/* First Page */
 
 .page-one {
   height: 100vh;
   width: 100%;
-  background: url("images/bg.jpg") no-repeat center center;
+  background: url("images/bg.jpg") no-repeat center center ;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: 100% 100%;
 }
-
-#bg-two {
-  height: 100vh;
-  width: 100%;
-  background: url("images/bg2.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: 100% 100%;
-}
-
-/* First Page */
 
 .page-one-head {
   text-indent: -9999px;
   margin: 0px;
 }
 
-.page-one-info {
-  position: relative;
-  top: 575px;
-  margin: 0px 305px;
-  width: 200px;
-  font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 19px;
-  letter-spacing: 2px;
-  color: white;
-  float: initial;
-}
-
 .page-one-h1 {
   position: relative;
   top: 565px;
-  margin: 0px 300px;
-  width: 200px;
+  margin: 0px 100px;
+  width: 210px;
   font-family: monospace;
   word-spacing: -10px;
   font-size: 50px;
@@ -117,7 +116,7 @@ and (max-width: 812px){
   display: inline-block;
   position: relative;
   top: 585px;
-  margin: 0px 305px;
+  margin: 0px 105px;
   width: 149px;
   padding: 18px 0px;
   font-family: monospace;
@@ -131,40 +130,23 @@ and (max-width: 812px){
   transition: color 2s ease-out 100ms;
 }
 
-/* When screen gets smaller */
+.page-one-btn div:hover {
+  background-color: white;
+  color:black
+}
+
+/* Page one screen gets smaller */
 
 @media only screen and (min-width: 0px) 
 and (max-width: 812px){
 .page-one {
   height: 203vh;
   width: 93.8vh;
-  background: url("images/bg.jpg") no-repeat center center;
+  background: url("images/bg.jpg") no-repeat center center ;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: initial;
-}
-}
-
-@media only screen and (min-width: 0px) 
-and (max-width: 812px){
-#bg-two {
-  height: 203vh;
-  width: 93.8vh;
-  background: url("images/bg2.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-}
-
-@media only screen and (min-width: 0px) 
-and (max-width: 812px){
-.page-one-info {
-  text-align: left;
-  top: 800px;
-  margin-left: 30px;
 }
 }
 
@@ -186,9 +168,247 @@ and (max-width: 812px){
 }
 }
 
-.page-one-btn div:hover {
+/* page two */
+
+.page-two {
+  height: 100vh;
+  width: 100%;
+  background: url("images/bg2.jpg") no-repeat center center ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100% 100%;
+}
+
+.page-two-h1 {
+  position: relative;
+  top: 565px;
+  margin: 0px 100px;
+  width: 210px;
+  font-family: monospace;
+  word-spacing: -10px;
+  font-size: 50px;
+  color: white;
+  float: initial;
+  vertical-align: top;
+}
+
+.page-two-btn div {
+  display: inline-block;
+  position: relative;
+  top: 585px;
+  margin: 0px 105px;
+  width: 149px;
+  padding: 18px 0px;
+  font-family: monospace;
+  font-weight: bold;
+  color: white;
+  outline: 2px white solid;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 2s ease-out 100ms;
+  transition: color 2s ease-out 100ms;
+}
+
+.page-two-btn div:hover {
   background-color: white;
   color:black
+}
+
+/* Page two screen gets smaller */
+
+@media only screen and (min-width: 0px) 
+and (max-width: 812px){
+.page-two {
+  height: 203vh;
+  width: 93.8vh;
+  background: url("images/bg2.jpg") no-repeat center center ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: initial;
+}
+}
+
+@media only screen and (min-width: 0px) 
+and (max-width: 812px){
+.page-two-h1 {
+  text-align: left;
+  top: 800px;
+  margin-left: 30px;
+}
+}
+
+@media only screen and (min-width: 0px) 
+and (max-width: 812px){
+.page-two-btn div {
+  text-align: center;
+  top: 800px;
+  margin-left: 30px;
+}
+}
+
+/* page three */
+
+.page-three {
+  height: 100vh;
+  width: 100%;
+  background: url("images/bg3.jpg") no-repeat center center ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100% 100%;
+}
+
+.page-three-h1 {
+  position: relative;
+  top: 565px;
+  margin: 0px 100px;
+  width: 200px;
+  font-family: monospace;
+  word-spacing: -10px;
+  font-size: 50px;
+  color: white;
+  float: initial;
+  vertical-align: top;
+}
+
+.page-three-btn div {
+  display: inline-block;
+  position: relative;
+  top: 585px;
+  margin: 0px 105px;
+  width: 149px;
+  padding: 18px 0px;
+  font-family: monospace;
+  font-weight: bold;
+  color: white;
+  outline: 2px white solid;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 2s ease-out 100ms;
+  transition: color 2s ease-out 100ms;
+}
+
+.page-three-btn div:hover {
+  background-color: white;
+  color:black
+}
+
+/* Page three screen gets smaller */
+
+@media only screen and (min-width: 0px) 
+and (max-width: 812px){
+.page-three {
+  height: 203vh;
+  width: 93.8vh;
+  background: url("images/bg3.jpg") no-repeat center center ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: initial;
+}
+}
+
+@media only screen and (min-width: 0px) 
+and (max-width: 812px){
+.page-three-h1 {
+  text-align: left;
+  top: 800px;
+  margin-left: 30px;
+}
+}
+
+@media only screen and (min-width: 0px) 
+and (max-width: 812px){
+.page-three-btn div {
+  text-align: center;
+  top: 800px;
+  margin-left: 30px;
+}
+}
+
+/* page four */
+
+.page-four {
+  height: 100vh;
+  width: 100%;
+  background: url("images/bg4.jpg") no-repeat center center ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100% 100%;
+}
+
+.page-four-h1 {
+  position: relative;
+  top: 565px;
+  margin: 0px 100px;
+  width: 200px;
+  font-family: monospace;
+  word-spacing: -10px;
+  font-size: 50px;
+  color: white;
+  float: initial;
+  vertical-align: top;
+}
+
+.page-four-btn div {
+  display: inline-block;
+  position: relative;
+  top: 585px;
+  margin: 0px 105px;
+  width: 149px;
+  padding: 18px 0px;
+  font-family: monospace;
+  font-weight: bold;
+  color: white;
+  outline: 2px white solid;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 2s ease-out 100ms;
+  transition: color 2s ease-out 100ms;
+}
+
+.page-four-btn div:hover {
+  background-color: white;
+  color:black
+}
+
+/* Page four screen gets smaller */
+
+@media only screen and (min-width: 0px) 
+and (max-width: 812px){
+.page-four {
+  height: 203vh;
+  width: 93.8vh;
+  background: url("images/bg4.jpg") no-repeat center center ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: initial;
+}
+}
+
+@media only screen and (min-width: 0px) 
+and (max-width: 812px){
+.page-four-h1 {
+  text-align: left;
+  top: 800px;
+  margin-left: 30px;
+}
+}
+
+@media only screen and (min-width: 0px) 
+and (max-width: 812px){
+.page-four-btn div {
+  text-align: center;
+  top: 800px;
+  margin-left: 30px;
+}
 }
 
 /* Dropdown Button */
@@ -207,7 +427,7 @@ and (max-width: 812px){
 }
 
 .dropbtn:hover, .dropbtn:focus {
-  background-color: rgba(45, 120, 170, 0);
+  background-color: rgba(72, 76, 78, 0);
 }
 
 .dropdown {
@@ -239,13 +459,13 @@ and (max-width: 812px){
 }
 
 .dropdown-content a:hover {
-  color: #ddd;
+  color: #919191;
 }
 
 .line {
   position: absolute;
-  width: 130px;
-  margin: 20px 15px;
+  width: 155px;
+  margin: 20px -10px;
 }
 
 .show {
