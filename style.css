@@ -6,15 +6,6 @@ body {
   background-color: black;
 }
 
-@media only screen and (min-width: 0px) 
-and (max-width: 812px){
-body {
-  margin: 0;
-  padding: 0;
-  width: fit-content;
-  }
-}
-
 /* Header */
 
 .header {
@@ -32,6 +23,7 @@ body {
 .nav-one {
   display: inline-block;
   text-align: center;
+  z-index: 21;
 }
 
 .nav-two {
@@ -82,16 +74,108 @@ and (max-width: 812px){
   }
 }
 
-/* First Page */
+/* Background Page */
 
-.page-one {
-  height: 100vh;
-  width: 100%;
-  background: url("images/bg.jpg") no-repeat center center ;
+.bg-page-one {
+  display: block;
+  background: url(images/bg.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: 100% 100%;
+  height: 100vh;
+  z-index: -10;
+}
+
+.bg-page-two {
+  display: block;
+  background: url(images/bg2.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100% 100%;
+  height: 100vh;
+  z-index: -10;
+}
+
+.bg-page-three {
+  display: block;
+  background: url(images/bg3.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100% 100%;
+  height: 100vh;
+  z-index: -10;
+}
+
+.bg-page-four {
+  display: block;
+  background: url(images/bg4.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100% 100%;
+  height: 100vh;
+  z-index: -10;
+}
+
+/* wider screen */
+
+@media only screen and (min-width: 1021px) 
+and (max-width: 1281px){
+  .bg-page-one {
+    background: url(images/bg.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100% 100%;
+    height: 850px;
+  }
+}
+
+@media only screen and (min-width: 1021px) 
+and (max-width: 1281px){
+  .bg-page-two {
+    background: url(images/bg2.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100% 100%;
+    height: 850px;
+  }
+}
+
+@media only screen and (min-width: 1021px) 
+and (max-width: 1281px){
+  .bg-page-three {
+    background: url(images/bg3.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100% 100%;
+    height: 850px;
+  }
+}
+
+@media only screen and (min-width: 1021px) 
+and (max-width: 1281px){
+  .bg-page-four {
+    background: url(images/bg4.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100% 100%;
+    height: 850px;
+  }
+}
+
+
+/* First Page */
+.page-one {
+  position: relative;
+  width: 100%;
+  z-index: 10;
 }
 
 .page-one-head {
@@ -100,23 +184,20 @@ and (max-width: 812px){
 }
 
 .page-one-h1 {
-  position: relative;
-  top: 565px;
-  margin: 0px 100px;
-  width: 210px;
+  position: absolute;
+  top: 620px;
+  left: 305px;
   font-family: monospace;
   word-spacing: -10px;
   font-size: 50px;
   color: white;
-  float: initial;
   vertical-align: top;
 }
 
 .page-one-btn div {
-  display: inline-block;
-  position: relative;
-  top: 585px;
-  margin: 0px 105px;
+  position: absolute;
+  top: 745px;
+  left: 305px;
   width: 149px;
   padding: 18px 0px;
   font-family: monospace;
@@ -132,72 +213,71 @@ and (max-width: 812px){
 
 .page-one-btn div:hover {
   background-color: white;
-  color:black
+  color: black;
 }
 
 /* Page one screen gets smaller */
-
-@media only screen and (min-width: 0px) 
-and (max-width: 812px){
-.page-one {
-  height: 203vh;
-  width: 93.8vh;
-  background: url("images/bg.jpg") no-repeat center center ;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: initial;
-}
-}
-
 @media only screen and (min-width: 0px) 
 and (max-width: 812px){
 .page-one-h1 {
-  text-align: left;
-  top: 800px;
-  margin-left: 30px;
+  position: absolute;
+  top: 420px;
+  left: 20px;
+  font-family: monospace;
+  word-spacing: -10px;
+  font-size: 50px;
+  color: white;
+  vertical-align: top;
 }
 }
 
 @media only screen and (min-width: 0px) 
 and (max-width: 812px){
 .page-one-btn div {
+  position: absolute;
+  top: 545px;
+  left: 20px;
+  width: 149px;
+  font-family: monospace;
+  font-weight: bold;
+  color: white;
+  outline: 2px white solid;
+  font-size: 15px;
+  font-weight: bold;
   text-align: center;
-  top: 800px;
-  margin-left: 30px;
+  transition: background-color 2s ease-out 100ms;
+  transition: color 2s ease-out 100ms;
 }
 }
 
 /* page two */
 
 .page-two {
-  height: 100vh;
+  position: relative;
   width: 100%;
-  background: url("images/bg2.jpg") no-repeat center center ;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: 100% 100%;
+  z-index: 10;
+}
+
+.page-two-head {
+  text-indent: -9999px;
+  margin: 0px;
 }
 
 .page-two-h1 {
-  position: relative;
-  top: 565px;
-  margin: 0px 100px;
-  width: 210px;
+  position: absolute;
+  top: 620px;
+  left: 305px;
   font-family: monospace;
   word-spacing: -10px;
   font-size: 50px;
   color: white;
-  float: initial;
   vertical-align: top;
 }
 
 .page-two-btn div {
-  display: inline-block;
-  position: relative;
-  top: 585px;
-  margin: 0px 105px;
+  position: absolute;
+  top: 745px;
+  left: 305px;
   width: 149px;
   padding: 18px 0px;
   font-family: monospace;
@@ -217,68 +297,66 @@ and (max-width: 812px){
 }
 
 /* Page two screen gets smaller */
-
-@media only screen and (min-width: 0px) 
-and (max-width: 812px){
-.page-two {
-  height: 203vh;
-  width: 93.8vh;
-  background: url("images/bg2.jpg") no-repeat center center ;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: initial;
-}
-}
-
 @media only screen and (min-width: 0px) 
 and (max-width: 812px){
 .page-two-h1 {
-  text-align: left;
-  top: 800px;
-  margin-left: 30px;
+  display: block;
+  top: 420px;
+  left: 20px;
+  font-family: monospace;
+  word-spacing: -10px;
+  font-size: 50px;
+  color: white;
 }
 }
 
 @media only screen and (min-width: 0px) 
 and (max-width: 812px){
 .page-two-btn div {
+  display: block;
+  top: 545px;
+  left: 20px;
+  width: 149px;
+  font-family: monospace;
+  font-weight: bold;
+  color: white;
+  outline: 2px white solid;
+  font-size: 15px;
+  font-weight: bold;
   text-align: center;
-  top: 800px;
-  margin-left: 30px;
+  transition: background-color 2s ease-out 100ms;
+  transition: color 2s ease-out 100ms;
 }
 }
 
 /* page three */
 
 .page-three {
-  height: 100vh;
+  position: relative;
   width: 100%;
-  background: url("images/bg3.jpg") no-repeat center center ;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: 100% 100%;
+  z-index: 10;
+}
+
+.page-three-head {
+  text-indent: -9999px;
+  margin: 0px;
 }
 
 .page-three-h1 {
-  position: relative;
-  top: 565px;
-  margin: 0px 100px;
-  width: 200px;
+  position: absolute;
+  top: 620px;
+  left: 305px;
   font-family: monospace;
   word-spacing: -10px;
   font-size: 50px;
   color: white;
-  float: initial;
   vertical-align: top;
 }
 
 .page-three-btn div {
-  display: inline-block;
-  position: relative;
-  top: 585px;
-  margin: 0px 105px;
+  position: absolute;
+  top: 745px;
+  left: 305px;
   width: 149px;
   padding: 18px 0px;
   font-family: monospace;
@@ -298,68 +376,67 @@ and (max-width: 812px){
 }
 
 /* Page three screen gets smaller */
-
-@media only screen and (min-width: 0px) 
-and (max-width: 812px){
-.page-three {
-  height: 203vh;
-  width: 93.8vh;
-  background: url("images/bg3.jpg") no-repeat center center ;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: initial;
-}
-}
-
 @media only screen and (min-width: 0px) 
 and (max-width: 812px){
 .page-three-h1 {
-  text-align: left;
-  top: 800px;
-  margin-left: 30px;
+  position: absolute;
+  top: 420px;
+  left: 20px;
+  font-family: monospace;
+  word-spacing: -10px;
+  font-size: 50px;
+  color: white;
+  vertical-align: top;
 }
 }
 
 @media only screen and (min-width: 0px) 
 and (max-width: 812px){
 .page-three-btn div {
+  position: absolute;
+  top: 545px;
+  left: 20px;
+  width: 149px;
+  font-family: monospace;
+  font-weight: bold;
+  color: white;
+  outline: 2px white solid;
+  font-size: 15px;
+  font-weight: bold;
   text-align: center;
-  top: 800px;
-  margin-left: 30px;
+  transition: background-color 2s ease-out 100ms;
+  transition: color 2s ease-out 100ms;
 }
 }
 
 /* page four */
 
 .page-four {
-  height: 100vh;
+  position: relative;
   width: 100%;
-  background: url("images/bg4.jpg") no-repeat center center ;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: 100% 100%;
+  z-index: 10;
+}
+
+.page-four-head {
+  text-indent: -9999px;
+  margin: 0px;
 }
 
 .page-four-h1 {
-  position: relative;
-  top: 565px;
-  margin: 0px 100px;
-  width: 200px;
+  position: absolute;
+  top: 620px;
+  left: 305px;
   font-family: monospace;
   word-spacing: -10px;
   font-size: 50px;
   color: white;
-  float: initial;
   vertical-align: top;
 }
 
 .page-four-btn div {
-  display: inline-block;
-  position: relative;
-  top: 585px;
-  margin: 0px 105px;
+  position: absolute;
+  top: 745px;
+  left: 305px;
   width: 149px;
   padding: 18px 0px;
   font-family: monospace;
@@ -379,35 +456,36 @@ and (max-width: 812px){
 }
 
 /* Page four screen gets smaller */
-
-@media only screen and (min-width: 0px) 
-and (max-width: 812px){
-.page-four {
-  height: 203vh;
-  width: 93.8vh;
-  background: url("images/bg4.jpg") no-repeat center center ;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: initial;
-}
-}
-
 @media only screen and (min-width: 0px) 
 and (max-width: 812px){
 .page-four-h1 {
-  text-align: left;
-  top: 800px;
-  margin-left: 30px;
+  position: absolute;
+  top: 420px;
+  left: 20px;
+  font-family: monospace;
+  word-spacing: -10px;
+  font-size: 50px;
+  color: white;
+  vertical-align: top;
 }
 }
 
 @media only screen and (min-width: 0px) 
 and (max-width: 812px){
 .page-four-btn div {
+  position: absolute;
+  top: 545px;
+  left: 20px;
+  width: 149px;
+  font-family: monospace;
+  font-weight: bold;
+  color: white;
+  outline: 2px white solid;
+  font-size: 15px;
+  font-weight: bold;
   text-align: center;
-  top: 800px;
-  margin-left: 30px;
+  transition: background-color 2s ease-out 100ms;
+  transition: color 2s ease-out 100ms;
 }
 }
 
