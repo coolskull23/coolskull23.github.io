@@ -7,7 +7,7 @@ body{
     background-color: rgb(33,33,33);
 }
 #sectionOne{
-    background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(StockPhotos/El\ Paso.jpg) no-repeat center center;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(StockPhotos/Researcher.jpg) no-repeat center center;
     background-repeat:no-repeat;
     background-size: cover;
     width: 100vw;
@@ -33,7 +33,6 @@ body{
 }
 .sections{
     display: flex;
-    height: 100vh;
     width: 90vw;
     flex-direction: column;
     align-items: center;
@@ -86,22 +85,20 @@ body{
     padding: 10px 10px 10px 5%;
     font-size: 20px;
 }
-@media screen and (max-width: 766px){
-    .headerAndDescription{
-        flex-direction: column;
-    }
-    .sectionHeader{
-        width: 100%;
-        align-items: center;
-        height: 50px;
-        padding: 0;
-    }
-    .sectionParagraph{
-        width: 100%;
-        padding: 0;
-
-    }
+.headerAndDescription{
+    flex-direction: column;
 }
+.sectionHeader{
+    width: 100%;
+    align-items: center;
+    height: 50px;
+    padding: 0;
+}
+.sectionParagraph{
+    width: 100%;
+    padding: 0;
+}
+
 .reveal{
     position: relative;
     transform: translateY(150px);
