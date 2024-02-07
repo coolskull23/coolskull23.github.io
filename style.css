@@ -185,7 +185,7 @@ and (max-width: 1281px){
 
 .page-one-h1 {
   position: absolute;
-  top: 610px;
+  top: 620px;
   left: 305px;
   font-family: monospace;
   word-spacing: -10px;
@@ -196,7 +196,7 @@ and (max-width: 1281px){
 
 .page-one-btn div {
   position: absolute;
-  top: 725px;
+  top: 745px;
   left: 305px;
   width: 149px;
   padding: 18px 0px;
@@ -265,7 +265,7 @@ and (max-width: 812px){
 
 .page-two-h1 {
   position: absolute;
-  top: 610px;
+  top: 620px;
   left: 305px;
   font-family: monospace;
   word-spacing: -10px;
@@ -276,7 +276,7 @@ and (max-width: 812px){
 
 .page-two-btn div {
   position: absolute;
-  top: 725px;
+  top: 745px;
   left: 305px;
   width: 149px;
   padding: 18px 0px;
@@ -344,7 +344,7 @@ and (max-width: 812px){
 
 .page-three-h1 {
   position: absolute;
-  top: 610px;
+  top: 620px;
   left: 305px;
   font-family: monospace;
   word-spacing: -10px;
@@ -355,7 +355,7 @@ and (max-width: 812px){
 
 .page-three-btn div {
   position: absolute;
-  top: 725px;
+  top: 745px;
   left: 305px;
   width: 149px;
   padding: 18px 0px;
@@ -435,7 +435,7 @@ and (max-width: 812px){
 
 .page-four-btn div {
   position: absolute;
-  top: 725px;
+  top: 745px;
   left: 305px;
   width: 149px;
   padding: 18px 0px;
