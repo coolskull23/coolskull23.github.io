@@ -134,6 +134,9 @@ img{
     margin: 0 auto;
     display: block;
 }
+.inlineHeader{
+    font-weight: bold;
+}
 @media screen and (max-width: 766px){
     .horizontalConatainer{
         flex-direction: column;
