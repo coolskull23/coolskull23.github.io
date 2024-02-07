@@ -4,14 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-    <link rel="stylesheet" href="AboutUs.css">
+    <link rel="stylesheet" href="aboutUs.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
     <script defer src="popUp.js"></script>
+    <script src="app.js"></script>
 </head>
 <body>
+  <main>
+
+    <header class="header">
+
+      <nav class="nav-one">
+          <a href="index.html"><img src="images/tsa.png" class="img" /></a>
+      </nav>
+  
+      <nav class="nav-two">
+          <ul class="ul">
+              <a class="li" href="AboutUs.html">ABOUT US</a></div>
+              <a class="li" href="pageTwo.html">WHY FUEL CELL</a></div>
+              <a class="li" href="pageThree.html">RESEARCH</a></div>
+              <a class="li" href="sources.html" role="button">SOURCES</a></div>
+          </ul>
+      </nav>
+
+    </header>
+
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">
+        <img src="images/hambuger.png" id="hambuger"/>
+      </button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="AboutUs.html">ABOUT US</a>
+        <hr class="line">
+        <a href="pageTwo.html">WHY FUEL CELL</a>
+        <hr class="line">
+        <a href="pageThree.html">RESEARCH</a>
+        <hr class="line">
+        <a href="sources.html">SOURCES</a>
+        <hr class="line">
+      </div>
+    </div>
+
+  </main>
+
     <div id="sectionOne">
+      <div class="scroll-prompt" scroll-prompt="" ng-show="showPrompt" style="opacity: 1;">
+        <div class="scroll-prompt-arrow-container">
+            <div class="scroll-prompt-arrow"><div></div></div>
+            <div class="scroll-prompt-arrow"><div></div></div>
+        </div>
+    </div>
         <div id="titleText">
           <h1>Meet Our Journey</h1>
           <p>Two students' path to success</p>
@@ -22,7 +67,7 @@
         <!--Top Half-->
         <!--Photo-->
         <div class="sectionPhoto">
-            <img src="images/Christian.jpg">
+            <img src="images/Christian.jpeg">
         </div>
         <div class="headerAndDescription">
           <!--Header-->
@@ -40,7 +85,7 @@
         <!--Top Half-->
         <!--Photo-->
         <div class="sectionPhoto">
-            <img src="images/mena.jpg">
+            <img src="images/mena.jpeg">
         </div>
         <div class="headerAndDescription">
           <!--Header-->
@@ -48,7 +93,7 @@
           <!--Bottom Half-->
             <!--Paragraph-->
           <div class="sectionParagraph">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi minima aliquam, eveniet dolor iure maiores! Nostrum, accusantium voluptas amet tempora earum sapiente recusandae iste iusto ex suscipit. Neque, modi optio.</p>
+            <p>Ever since I was a little kid I had always been fascinated with technolgy and what you could do with it. I am currently 17 years old and a junior a highschool  want to go to college and get a double major in computer science and computer engineering. After that I would like to work with a big tech company and later and start my own business with all the experince I will be carrying.</p>
           </div>
         </div>
       </div>

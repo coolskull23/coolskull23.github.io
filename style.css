@@ -3,7 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
+  background-color: rgb(33,33,33);
 }
 
 html {
@@ -17,6 +17,7 @@ html {
   text-align: center;
   width: 100%;
   font-family: monospace;
+  z-index: 69;
 }
 
 .img {
@@ -519,6 +520,7 @@ and (max-width: 812px){
   margin: 15px 0%;
   font-family: monospace;
   font-size: 18px;
+  z-index: 69;
 }
 
 .dropdown-content {
@@ -738,4 +740,28 @@ and (max-width: 812px){
   100% {
     transform: translateY(30px);
   }
+}
+footer{
+  display: inline-block;
+  color: white;
+  height: auto;
+  width: 100vw;
+  text-align: center;
+  background-color: rgb(30,30,30);
+}
+.footerBullets ul{
+  list-style: none;
+  display: inline-flex;
+  flex-direction: row;
+}
+.footerBullets ul li{
+  padding: 10px;
+}
+.footerBullets ul li a{
+  text-decoration: none;
+  color: white;
+}
+.footerBullets ul li a::after{
+  text-decoration: none;
+  color: white;
 }

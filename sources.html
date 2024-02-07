@@ -6,8 +6,55 @@
     <title>Sources</title>
     <link rel="stylesheet" href="sources.css">
     <script defer src="popUp.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <main>
+
+    <header class="header">
+
+      <nav class="nav-one">
+          <a href="index.html"><img src="images/tsa.png" class="img" /></a>
+      </nav>
+  
+      <nav class="nav-two">
+          <ul class="ul">
+              <a class="li" href="AboutUs.html">ABOUT US</a></div>
+              <a class="li" href="pageTwo.html">WHY FUEL CELL</a></div>
+              <a class="li" href="pageThree.html">RESEARCH</a></div>
+              <a class="li" href="sources.html" role="button">SOURCES</a></div>
+          </ul>
+      </nav>
+
+    </header>
+
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">
+        <img src="images/hambuger.png" id="hambuger"/>
+      </button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="AboutUs.html">ABOUT US</a>
+        <hr class="line">
+        <a href="pageTwo.html">WHY FUEL CELL</a>
+        <hr class="line">
+        <a href="pageThree.html">RESEARCH</a>
+        <hr class="line">
+        <a href="sources.html">SOURCES</a>
+        <hr class="line">
+      </div>
+    </div>
+
+  </main>
+
+  <div class="scroll-prompt" scroll-prompt="" ng-show="showPrompt" style="opacity: 1;">
+    <div class="scroll-prompt-arrow-container">
+        <div class="scroll-prompt-arrow"><div></div></div>
+        <div class="scroll-prompt-arrow"><div></div></div>
+    </div>
+</div>
+
   <div id="sectionOne">
     <div id="titleText">
       <h1>Our sources</h1>
