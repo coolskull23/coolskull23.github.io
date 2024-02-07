@@ -140,6 +140,9 @@ img{
         align-items: center;
         height: auto;
     }
+    .otherInitiatives{
+        margin: 0 20px;
+    }
     .otherInitiativesParagraph{
         display: inline-flex;
         flex-direction: column;
