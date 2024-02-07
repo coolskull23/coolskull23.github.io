@@ -739,10 +739,3 @@ and (max-width: 812px){
     transform: translateY(30px);
   }
 }
-.cd__main {
-    background: black !important;
-    align-items: center;
-    height: 82vh;
-    display: flex;
-    width: 100%;
-}
