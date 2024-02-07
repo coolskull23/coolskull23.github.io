@@ -17,3 +17,17 @@ window.onclick = function(event) {
     }
   }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  const scrollPrompt = document.querySelector('.scroll-prompt');
+
+  function handleScroll() {
+    if (window.scrollY > 0) {
+      scrollPrompt.style.opacity = '0';
+    } else {
+      scrollPrompt.style.opacity = '1';
+    }
+  }
+
+  window.addEventListener('scroll', handleScroll);
+});
