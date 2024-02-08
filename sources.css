@@ -48,7 +48,7 @@ footer{
     display: inline-block;
     color: white;
     height: auto;
-    width: 100vw;
+    width: 100%;
     text-align: center;
     background-color: rgb(30,30,30);
 }
