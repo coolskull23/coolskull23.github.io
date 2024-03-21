@@ -21,6 +21,37 @@ footer{
     width: 100%;
     text-align: center;
 }
+form{
+    display: inline-flex;
+    flex-direction: column;
+}
+h3{
+    text-align: left;
+}
+button{
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 20px 0px 0px 40%;
+    border: 0;
+    color: white;
+    background: #555;
+}
+input{
+    width: 500px;
+    height: 20px;
+}
+form{
+    color: #555;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+input, textarea{
+    background: rgb(240, 240, 240);
+    border: rgb(240, 240, 240);
+    padding: 10px;
+}
 .footerBullets ul{
     list-style: none;
     display: inline-flex;
