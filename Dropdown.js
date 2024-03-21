@@ -5,7 +5,7 @@ goButton.addEventListener("click", () => {
     const selectedState = stateSelect.value;
     
     if(selectedState !== "selectState") {
-        window.location.href ="/Users/chris/OneDrive/Desktop/tsawebsite-main/StatesHTML/" + selectedState + ".html";
+        window.location.href ="https://coolskull23.github.io/tsawebsite/StatesHTML/" + selectedState + ".html";
     } else {
         alert("Please pick a state");
     }
