@@ -19,6 +19,9 @@ body{
     padding: 10px;
     flex-grow: 1;
 }
+.disclaimer{
+    text-align: center;
+}
 .sectionStateDiv p{
     font-size: 15px;
 }
