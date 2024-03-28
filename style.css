@@ -1,0 +1,850 @@
+/* Body */
+
+body {
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(20, 20, 20);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header */
+
+.header {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  font-family: monospace;
+  z-index: 69;
+}
+
+.img {
+  width: 85px;
+  margin: 15px 0px 0px 0px;
+}
+
+.nav-one {
+  outline: red;
+  display: inline-block;
+  z-index: 21;
+}
+
+.nav-two {
+  display: inline-block;
+  margin: 20px 70px 20px 0px;
+  text-align: center;
+  top: 20px;
+}
+
+.nav-two ul li{
+  display: inline-block;
+  list-style-type: none;
+  text-align: center;
+}
+
+.ul a {
+  color: white;
+  font-family: monospace;
+  font-size: 20px;
+  padding: 0px 15px;
+  position: relative;
+  text-decoration: none;
+}
+
+.ul a:hover {
+  color: white;
+}
+
+.ul a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 85%;
+  height: 2px;
+  bottom: 0;
+  left: 8%;
+  background-color: white;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.ul a:hover::before {
+  transform: scaleX(1);
+}
+
+@media only screen and (min-width: 0px) 
+and (max-width: 812px){
+.ul {
+  display: none;
+  visibility: hidden !important;
+  width: 450px;
+  margin: 0px;
+  padding: 0px;
+  }
+}
+
+/* Background Page */
+
+.bg-page-one {
+  display: block;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(StockPhotos/El\ Paso.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100% 100%;
+  height: 100vh;
+  z-index: -10;
+}
+
+.bg-page-two {
+  display: block;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(StockPhotos/HydrogenHouse.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100% 100%;
+  height: 100vh;
+  z-index: -10;
+}
+
+.bg-page-three {
+  display: block;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(StockPhotos/Researcher.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100% 100%;
+  height: 100vh;
+  z-index: -10;
+}
+
+.bg-page-five {
+  display: block;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(images/usa.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100% 100%;
+  height: 100vh;
+  z-index: -10;
+}
+
+.bg-page-four {
+  display: block;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(StockPhotos/Nauture.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100% 100%;
+  height: 100vh;
+  z-index: -10;
+}
+
+
+/* First Page */
+.page-one {
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+
+.page-one-head {
+  text-indent: -9999px;
+  margin: 0px;
+}
+
+.page-one-h1 {
+  position: absolute;
+  top: 560px;
+  left: 305px;
+  font-family: monospace;
+  word-spacing: -10px;
+  font-size: 50px;
+  color: white;
+  vertical-align: top;
+}
+
+.page-one-btn div {
+  position: absolute;
+  top: 685px;
+  left: 305px;
+  width: 149px;
+  padding: 18px 0px;
+  font-family: monospace;
+  font-weight: bold;
+  color: white;
+  outline: 2px white solid;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 2s ease-out 100ms;
+  transition: color 2s ease-out 100ms;
+}
+
+.page-one-btn div:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Page one screen gets smaller */
+@media only screen and (min-width: 0px) 
+and (max-width: 812px){
+.page-one-h1 {
+  position: absolute;
+  top: 420px;
+  left: 20px;
+  font-family: monospace;
+  word-spacing: -10px;
+  font-size: 50px;
+  color: white;
+  vertical-align: top;
+}
+}
+
+@media only screen and (min-width: 0px) 
+and (max-width: 812px){
+.page-one-btn div {
+  position: absolute;
+  top: 545px;
+  left: 20px;
+  width: 149px;
+  font-family: monospace;
+  font-weight: bold;
+  color: white;
+  outline: 2px white solid;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 2s ease-out 100ms;
+  transition: color 2s ease-out 100ms;
+}
+}
+
+/* page two */
+
+.page-two {
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+
+.page-two-head {
+  text-indent: -9999px;
+  margin: 0px;
+}
+
+.page-two-h1 {
+  position: absolute;
+  top: 560px;
+  left: 305px;
+  font-family: monospace;
+  word-spacing: -10px;
+  font-size: 50px;
+  color: white;
+  vertical-align: top;
+}
+
+.page-two-btn div {
+  position: absolute;
+  top: 685px;
+  left: 305px;
+  width: 149px;
+  padding: 18px 0px;
+  font-family: monospace;
+  font-weight: bold;
+  color: white;
+  outline: 2px white solid;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 2s ease-out 100ms;
+  transition: color 2s ease-out 100ms;
+}
+
+.page-two-btn div:hover {
+  background-color: white;
+  color:black
+}
+
+/* Page two screen gets smaller */
+@media only screen and (min-width: 0px) 
+and (max-width: 812px){
+.page-two-h1 {
+  display: block;
+  top: 390px;
+  left: 20px;
+  font-family: monospace;
+  word-spacing: -10px;
+  font-size: 47px;
+  color: white;
+}
+}
+
+@media only screen and (min-width: 0px) 
+and (max-width: 812px){
+.page-two-btn div {
+  display: block;
+  top: 545px;
+  left: 20px;
+  width: 149px;
+  font-family: monospace;
+  font-weight: bold;
+  color: white;
+  outline: 2px white solid;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 2s ease-out 100ms;
+  transition: color 2s ease-out 100ms;
+}
+}
+
+/* page three */
+
+.page-three {
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+
+.page-three-head {
+  text-indent: -9999px;
+  margin: 0px;
+}
+
+.page-three-h1 {
+  position: absolute;
+  top: 560px;
+  left: 305px;
+  font-family: monospace;
+  word-spacing: -10px;
+  font-size: 50px;
+  color: white;
+  vertical-align: top;
+}
+
+.page-three-btn div {
+  position: absolute;
+  top: 685px;
+  left: 305px;
+  width: 149px;
+  padding: 18px 0px;
+  font-family: monospace;
+  font-weight: bold;
+  color: white;
+  outline: 2px white solid;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 2s ease-out 100ms;
+  transition: color 2s ease-out 100ms;
+}
+
+.page-three-btn div:hover {
+  background-color: white;
+  color:black
+}
+
+/* Page three screen gets smaller */
+@media only screen and (min-width: 0px) 
+and (max-width: 812px){
+.page-three-h1 {
+  position: absolute;
+  top: 420px;
+  left: 20px;
+  font-family: monospace;
+  word-spacing: -10px;
+  font-size: 50px;
+  color: white;
+  vertical-align: top;
+}
+}
+
+@media only screen and (min-width: 0px) 
+and (max-width: 812px){
+.page-three-btn div {
+  position: absolute;
+  top: 545px;
+  left: 20px;
+  width: 149px;
+  font-family: monospace;
+  font-weight: bold;
+  color: white;
+  outline: 2px white solid;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 2s ease-out 100ms;
+  transition: color 2s ease-out 100ms;
+}
+}
+
+/* page four */
+
+.page-four {
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+
+.page-four-head {
+  text-indent: -9999px;
+  margin: 0px;
+}
+
+.page-four-h1 {
+  position: absolute;
+  top: 560px;
+  left: 305px;
+  font-family: monospace;
+  word-spacing: -10px;
+  font-size: 50px;
+  color: white;
+  vertical-align: top;
+}
+
+.page-four-btn div {
+  position: absolute;
+  top: 685px;
+  left: 305px;
+  width: 149px;
+  padding: 18px 0px;
+  font-family: monospace;
+  font-weight: bold;
+  color: white;
+  outline: 2px white solid;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 2s ease-out 100ms;
+  transition: color 2s ease-out 100ms;
+}
+
+.page-four-btn div:hover {
+  background-color: white;
+  color:black
+}
+
+/* Page four screen gets smaller */
+@media only screen and (min-width: 0px) 
+and (max-width: 812px){
+.page-four-h1 {
+  position: absolute;
+  top: 420px;
+  left: 20px;
+  font-family: monospace;
+  word-spacing: -10px;
+  font-size: 50px;
+  color: white;
+  vertical-align: top;
+}
+}
+
+@media only screen and (min-width: 0px) 
+and (max-width: 812px){
+.page-four-btn div {
+  position: absolute;
+  top: 545px;
+  left: 20px;
+  width: 149px;
+  font-family: monospace;
+  font-weight: bold;
+  color: white;
+  outline: 2px white solid;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 2s ease-out 100ms;
+  transition: color 2s ease-out 100ms;
+}
+}
+
+/* page five */
+
+.page-five {
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+
+.page-five-head {
+  text-indent: -9999px;
+  margin: 0px;
+}
+
+.page-five-h1 {
+  position: absolute;
+  top: 530px;
+  left: 305px;
+  font-family: monospace;
+  word-spacing: -10px;
+  font-size: 50px;
+  color: white;
+  vertical-align: top;
+}
+
+.page-five-btn div {
+  position: absolute;
+  top: 685px;
+  left: 305px;
+  width: 149px;
+  padding: 18px 0px;
+  font-family: monospace;
+  font-weight: bold;
+  color: white;
+  outline: 2px white solid;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 2s ease-out 100ms;
+  transition: color 2s ease-out 100ms;
+}
+
+.page-five-btn div:hover {
+  background-color: white;
+  color:black
+}
+
+/* Page five screen gets smaller */
+@media only screen and (min-width: 0px) 
+and (max-width: 812px){
+.page-five-h1 {
+  position: absolute;
+  top: 330px;
+  left: 20px;
+  font-family: monospace;
+  word-spacing: -10px;
+  font-size: 50px;
+  color: white;
+  vertical-align: top;
+}
+}
+
+@media only screen and (min-width: 0px) 
+and (max-width: 812px){
+.page-five-btn div {
+  position: absolute;
+  top: 545px;
+  left: 20px;
+  width: 149px;
+  font-family: monospace;
+  font-weight: bold;
+  color: white;
+  outline: 2px white solid;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 2s ease-out 100ms;
+  transition: color 2s ease-out 100ms;
+}
+}
+
+/* Dropdown Button */
+
+.dropbtn {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 30px 50px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+#hambuger {
+  z-index: 100;
+  width: 15px;
+  height: 13px;
+}
+
+#hambugers {
+  display: inline-block;
+  position: fixed;
+  z-index: 100;
+  width: 15px;
+  height: 13px;
+  top: 47px;
+  right: 50px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: rgba(72, 76, 78, 0);
+}
+
+.dropdown {
+  position: fixed;
+  display: inline-block;
+  right: 0;
+  margin: 15px 0%;
+  font-family: monospace;
+  font-size: 18px;
+  z-index: 69;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+  margin: 0px -80px;
+  height: 300vh;
+}
+
+/* Show dropdown content when the dropdown wrapper is clicked */
+.dropdown-content.show {
+  display: block;
+  animation: slideOut 0.1s ease backwards; /* Apply animation */
+}
+
+/* Keyframe animation for sliding down */
+@keyframes slideOut {
+  from {
+    width: 0; /* Start from height of 0 */
+  }
+  to {
+    width: 2; /* End at desired height */
+  }
+} 
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  top: 90px;
+  left: 60px;
+  margin-top: 0px;
+  width: 240px;
+  text-align: right;
+}
+
+.dropdown-content a:hover {
+  color: #919191;
+}
+
+.line {
+  display: inline-block;
+  position: relative;
+  width: 250px;
+  top: 90px;
+  left: 50px;
+}
+
+.show {
+  display:block;
+  background: rgba(20, 20, 20, 0.95);
+  top: -15px;
+  right: 80px;
+  width: 350px;
+}
+
+/* Arrow */
+.scroll-prompt {
+  position: fixed;
+  z-index: 998;
+  left: 50%;
+  margin-top: 42%;
+  margin-left: -80px;
+  width: 160px;
+}
+.scroll-prompt .scroll-prompt-arrow-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -18px;
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.scroll-prompt .scroll-prompt-arrow {
+  -webkit-animation-name: opacity;
+          animation-name: opacity;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.scroll-prompt .scroll-prompt-arrow:last-child {
+  animation-direction: reverse;
+  margin-top: -6px;
+}
+.scroll-prompt .scroll-prompt-arrow > div {
+  width: 36px;
+  height: 36px;
+  border-right: 8px solid #bebebe;
+  border-bottom: 8px solid #bebebe;
+  transform: rotate(45deg) translateZ(1px);
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(3px);
+  }
+  20% {
+    transform: translateY(6px);
+  }
+  30% {
+    transform: translateY(9px);
+  }
+  40% {
+    transform: translateY(12px);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  60% {
+    transform: translateY(18px);
+  }
+  70% {
+    transform: translateY(21px);
+  }
+  80% {
+    transform: translateY(24px);
+  }
+  90% {
+    transform: translateY(27px);
+  }
+  100% {
+    transform: translateY(30px);
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(3px);
+  }
+  20% {
+    transform: translateY(6px);
+  }
+  30% {
+    transform: translateY(9px);
+  }
+  40% {
+    transform: translateY(12px);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  60% {
+    transform: translateY(18px);
+  }
+  70% {
+    transform: translateY(21px);
+  }
+  80% {
+    transform: translateY(24px);
+  }
+  90% {
+    transform: translateY(27px);
+  }
+
+
+  100% {
+    transform: translateY(30px);
+  }
+}
+footer{
+  display: inline-block;
+  color: white;
+  height: auto;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(20, 20, 20);
+}
+.footerBullets ul{
+  list-style: none;
+  display: inline-flex;
+  flex-direction: row;
+}
+.footerBullets ul li{
+  padding: 10px;
+}
+.footerBullets ul li a{
+  text-decoration: none;
+  color: white;
+}
+.footerBullets ul li a::after{
+  text-decoration: none;
+  color: white;
+}

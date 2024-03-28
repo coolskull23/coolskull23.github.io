@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contactUs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="images/tsa.png" type="images/tsa.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+    <script defer src="popUp.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+  <main>
+
+    <header class="header">
+
+      <nav class="nav-one">
+          <a href="index.html"><img src="images/tsa.png" class="img" /></a>
+      </nav>
+  
+      <nav class="nav-two">
+          <ul class="ul">
+              <li><a class="li" href="AboutUs.html">ABOUT US</a></li>
+              <li><a class="li" href="pageTwo.html">WHY FUEL CELL</a></li>
+              <li><a class="li" href="pageThree.html">RESEARCH</a></li>
+              <li><a class="li" href="software.html" role="button">STATE ENERGY TAX LAWS</a></li>
+              <li><a class="li" href="sources.html" role="button">SOURCES</a></li>
+          </ul>
+      </nav>
+
+    </header>
+
+    <div class="dropdown">
+      <div>
+      <button onclick="myFunction()" class="dropbtn">
+        <img src="images/hambuger.png" id="hambuger"/>
+      </button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#."><img src="images/hambuger.png" id="hambugers"/></a>
+        <a href="AboutUs.html">ABOUT US</a>
+        <hr class="line">
+        <a href="pageTwo.html">WHY FUEL CELL</a>
+        <hr class="line">
+        <a href="pageThree.html">RESEARCH</a>
+        <hr class="line">
+        <a href="software.html"> STATE ENERGY TAX LAWS</a>
+        <hr class="line">
+        <a href="sources.html">SOURCES</a>
+        <hr class="line">
+      </div>
+    </div>
+
+  </main>
+
+    <div class="contactUs">
+        <h1>Contact Us</h1>
+        <form action="https://formsubmit.co/moofbob9@gmail.com" method="POST">
+          <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+          <h3>Name</h3>
+          <input type="text" name="name" placeholder="Name" required>
+          <h3>Email</h3>
+          <input type="email" name="email" placeholder="Email" required>
+          <h3>Phone Number</h3>
+          <input type="text" name="phone" placeholder="Phone Number (Optional)">
+          <h3>Message</h3>
+          <input type="text" name="message" placeholder="Your Message" required>
+          <button type="submit">Submit</button>
+        </form>
+    </div>
+    <footer>
+      <div class="footerBullets">
+        <ul>
+          <li>TSA 2024</li>
+          <li><a href="contactUs.html">Contact Us</a></li>
+          <li><a href="Copyright.html" target="_blank">Copyright</a></li>
+        </ul>
+      </div>
+  </footer>
+</body>
+</html>

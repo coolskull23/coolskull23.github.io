@@ -1,0 +1,272 @@
+  html{
+    background: rgb(33,33,33);
+  }
+  
+  body{
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)),url(images/usa-main.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 1;
+    height: 100vh;
+    z-index: -10;
+  }
+
+  .title{
+    position: absolute;
+    top: 21vh;
+    font-size: 35px;
+  }
+
+  .dropDownDiv{
+    width: 98%;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 15px 0 15px;
+    margin-bottom: 30px;
+    font-family: monospace;
+    color: white;
+  }
+
+  .selectDropDown{
+    background: white;
+    padding: 15px 10px 15px 10px;
+    height: 520px;
+    margin-top: 30vh;
+    color: #555;
+    border-radius: 10px;
+    width: 50%;
+  }
+
+  .selectDropDown label {
+    font-size: 20px;
+  }
+
+  #goButton{
+    display: block;
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 10px 0px 0px 0px;
+    border: 0;
+    color: white;
+    background: #555;
+    font-weight: bolder;
+  }
+
+  .form-control{
+    width: 100%;
+    border-color: #555;
+    border-radius: 5px;
+    padding: 10px 0px 10px 0px;
+  }
+
+  .states{
+    display: block;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    border-width: 300px;
+  }
+
+/* Header */
+
+.header {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  font-family: monospace;
+  z-index: 69;
+}
+
+.img {
+  width: 85px;
+  margin: 15px 0px 0px 0px;
+}
+
+.nav-one {
+  outline: red;
+  display: inline-block;
+  z-index: 21;
+}
+
+.nav-two {
+  display: inline-block;
+  margin: 20px 70px 20px 0px;
+  text-align: center;
+  top: 20px;
+}
+
+.nav-two ul li{
+  display: inline-block;
+  list-style-type: none;
+  text-align: center;
+}
+
+.ul a {
+  color: white;
+  font-family: monospace;
+  font-size: 20px;
+  padding: 0px 15px;
+  position: relative;
+  text-decoration: none;
+}
+
+.ul a:hover {
+  color: white;
+}
+
+.ul a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 85%;
+  height: 2px;
+  bottom: 0;
+  left: 8%;
+  background-color: white;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.ul a:hover::before {
+  transform: scaleX(1);
+}
+
+@media only screen and (min-width: 0px) 
+and (max-width: 812px){
+.ul {
+  display: none;
+  visibility: hidden !important;
+  width: 450px;
+  margin: 0px;
+  padding: 0px;
+  }
+}
+
+/* Dropdown Button */
+
+.dropbtn {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 30px 50px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+#hambuger {
+  z-index: 100;
+  width: 15px;
+  height: 13px;
+}
+
+#hambugers {
+  display: inline-block;
+  position: fixed;
+  z-index: 100;
+  width: 15px;
+  height: 13px;
+  top: 47px;
+  right: 50px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: rgba(72, 76, 78, 0);
+}
+
+.dropdown {
+  position: fixed;
+  display: inline-block;
+  right: 0;
+  margin: 15px 0%;
+  font-family: monospace;
+  font-size: 18px;
+  z-index: 69;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+  margin: 0px -80px;
+  height: 300vh;
+}
+
+/* Show dropdown content when the dropdown wrapper is clicked */
+.dropdown-content.show {
+  display: block;
+  animation: slideOut 0.1s ease backwards; /* Apply animation */
+}
+
+/* Keyframe animation for sliding down */
+@keyframes slideOut {
+  from {
+    width: 0; /* Start from height of 0 */
+  }
+  to {
+    width: 2; /* End at desired height */
+  }
+} 
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  top: 90px;
+  left: 60px;
+  margin-top: 0px;
+  width: 240px;
+  text-align: right;
+}
+
+.dropdown-content a:hover {
+  color: #919191;
+}
+
+.line {
+  display: inline-block;
+  position: relative;
+  width: 250px;
+  top: 90px;
+  left: 50px;
+}
+
+.show {
+  display:block;
+  background: rgba(20, 20, 20, 0.95);
+  top: -15px;
+  right: 80px;
+  width: 350px;
+}
+
+footer{
+  display: inline-block;
+  color: white;
+  height: auto;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(20, 20, 20);
+  margin-top: 53.65px;
+}
+.footerBullets ul{
+  list-style: none;
+  display: inline-flex;
+  flex-direction: row;
+}
+.footerBullets ul li{
+  padding: 10px;
+}
+.footerBullets ul li a{
+  text-decoration: none;
+  color: white;
+}
+.footerBullets ul li a::after{
+  text-decoration: none;
+  color: white;
+}
