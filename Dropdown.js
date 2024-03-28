@@ -3,9 +3,9 @@ const goButton = document.getElementById("goButton");
 
 goButton.addEventListener("click", () => {
     const selectedState = stateSelect.value;
-    
+
     if(selectedState !== "selectState") {
-        window.location.href ="/tsawebsite/StatesHTML/" + selectedState + ".html";
+        window.open("/tsawebsite/StatesHTML/" + selectedState + ".html", '_blank');
     } else {
         alert("Please pick a state");
     }
