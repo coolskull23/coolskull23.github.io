@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/tsa.png" type="images/tsa.png"/>
+  <title>State Energy Tax Laws</title>
+  <link rel="stylesheet" href="software.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="images/tsa-small.png" type="images/tsa.png"/>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+  <script defer src="popUp.js"></script>
+  <script src="app.js"></script>
+  <script src="Dropdown.js" defer></script>        
+</head>
+
+<body>
+
+  <main>
+
+    <header class="header">
+
+      <nav class="nav-one">
+          <a href="index.html"><img src="images/tsa.png" class="img" /></a>
+      </nav>
+  
+      <nav class="nav-two">
+          <ul class="ul">
+              <li><a class="li" href="AboutUs.html">ABOUT US</a></li>
+              <li><a class="li" href="pageTwo.html">WHY FUEL CELL</a></li>
+              <li><a class="li" href="pageThree.html">RESEARCH</a></li>
+              <li><a class="li" href="software.html" role="button">STATE ENERGY TAX LAWS</a></li>
+              <li><a class="li" href="sources.html" role="button">SOURCES</a></li>
+          </ul>
+      </nav>
+
+    </header>
+
+    <div class="dropdown">
+      <div>
+      <button onclick="myFunction()" class="dropbtn">
+        <img src="images/hambuger.png" id="hambuger"/>
+      </button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#."><img src="images/hambuger.png" id="hambugers"/></a>
+        <a href="AboutUs.html">ABOUT US</a>
+        <hr class="line">
+        <a href="pageTwo.html">WHY FUEL CELL</a>
+        <hr class="line">
+        <a href="pageThree.html">RESEARCH</a>
+        <hr class="line">
+        <a href="software.html"> STATE ENERGY TAX LAWS</a>
+        <hr class="line">
+        <a href="sources.html">SOURCES</a>
+        <hr class="line">
+      </div>
+    </div>
+
+  </main>
+
+<div class="dropDownDiv">
+  <h1 class="title">Find out more tax information about your state!</h1>
+  <div class="selectDropDown">
+    <label for="state" class="states">Choose a state</label>
+    <select name="user-state" id="user-state" class="form-control" onfocus='this.size=25;' onblur='this.size=1;' onchange='this.size=1; this.blur();'>
+       <option target="_blank" value="selectState">Choose a state</option>
+       <option target="_blank" value="alabama">Alabama</option>
+       <option target="_blank" value="alaska">Alaska</option>
+       <option target="_blank" value="arizona">Arizona</option>
+       <option target="_blank" value="california">California</option>
+       <option target="_blank" value="colorado">Colorado</option>
+       <option target="_blank" value="connecticut">Connecticut</option>
+       <option target="_blank" value="delaware">Delaware</option>
+       <option target="_blank" value="florida">Florida</option>
+       <option target="_blank" value="georgia">Georgia</option>
+       <option target="_blank" value="hawaii">Hawaii</option>
+       <option target="_blank" value="idaho">Idaho</option>
+       <option target="_blank" value="illinois">Illinois</option>
+       <option target="_blank" value="indiana">Indiana</option>
+       <option target="_blank" value="iowa">Iowa</option>
+       <option target="_blank" value="kansas">Kansas</option>
+       <option target="_blank" value="kentucky">Kentucky</option>
+       <option target="_blank" value="louisiana">Louisiana</option>
+       <option target="_blank" value="maine">Maine</option>
+       <option target="_blank" value="maryland">Maryland</option>
+       <option target="_blank" value="massachusetts">Massachusetts</option>
+       <option target="_blank" value="michigan">Michigan</option>
+       <option target="_blank" value="minnesota">Minnesota</option>
+       <option target="_blank" value="mississippi">Mississippi</option>
+       <option target="_blank" value="missouri">Missouri</option>
+       <option target="_blank" value="montana">Montana</option>
+       <option target="_blank" value="nebraska">Nebraska</option>
+       <option target="_blank" value="nevada">Nevada</option>
+       <option target="_blank" value="newHampshire">New Hampshire</option>
+       <option target="_blank" value="newJersey">New Jersey</option>
+       <option target="_blank" value="newMexico">New Mexico</option>
+       <option target="_blank" value="newYork">New York</option>
+       <option target="_blank" value="northCarolina">North Carolina</option>
+       <option target="_blank" value="northDakota">North Dakota</option>
+       <option target="_blank" value="ohio">Ohio</option>
+       <option target="_blank" value="oklahoma">Oklahoma</option>
+       <option target="_blank" value="oregon">Oregon</option>
+       <option target="_blank" value="pennsylvania">Pennsylvania</option>
+       <option target="_blank" value="rhodeIsland">Rhode Island</option>
+       <option target="_blank" value="southCarolina">South Carolina</option>
+       <option target="_blank" value="southDakota">South Dakota</option>
+       <option target="_blank" value="tennessee">Tennessee</option>
+       <option target="_blank" value="texas">Texas</option>
+       <option target="_blank" value="utah">Utah</option>
+       <option target="_blank" value="vermont">Vermont</option>
+       <option target="_blank" value="virginia">Virginia</option>
+       <option target="_blank" value="washington">Washington</option>
+       <option target="_blank" value="westVirginia">West Virginia</option>
+       <option target="_blank" value="wisconsin">Wisconsin</option>
+       <option target="_blank" value="wyoming">Wyoming</option>
+    </select>
+    <button id="goButton" target="_blank">Go</button>
+  </div>
+</div>
+
+<div class="bg-page"></div>
+
+<footer>
+  <div class="footerBullets">
+    <ul>
+      <li>TSA 2024</li>
+      <li><a href="contactUs.html">Contact Us</a></li>
+      <li><a href="Copyright.html" target="_blank">Copyright</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>
