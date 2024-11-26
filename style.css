@@ -13,6 +13,95 @@ html {
 
 /* Header */
 
+.bg-page-six {
+  display: block;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(images/page-five.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100% 100%;
+  height: 100vh;
+  z-index: -10;
+}
+
+.page-six {
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+
+.page-fisixve-head {
+  text-indent: -9999px;
+  margin: 0px;
+}
+
+.page-six-h1 {
+  position: absolute;
+  top: 560px;
+  left: 305px;
+  font-family: monospace;
+  word-spacing: -10px;
+  font-size: 50px;
+  color: white;
+  vertical-align: top;
+}
+
+.page-six-btn div {
+  position: absolute;
+  top: 685px;
+  left: 305px;
+  width: 149px;
+  padding: 18px 0px;
+  font-family: monospace;
+  font-weight: bold;
+  color: white;
+  outline: 2px white solid;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 2s ease-out 100ms;
+  transition: color 2s ease-out 100ms;
+}
+
+.page-six-btn div:hover {
+  background-color: white;
+  color:black
+}
+
+/* Page five screen gets smaller */
+@media only screen and (min-width: 0px) 
+and (max-width: 812px){
+.page-six-h1 {
+  position: absolute;
+  top: 420px;
+  left: 20px;
+  font-family: monospace;
+  word-spacing: -10px;
+  font-size: 50px;
+  color: white;
+  vertical-align: top;
+}
+}
+
+@media only screen and (min-width: 0px) 
+and (max-width: 812px){
+.page-six-btn div {
+  position: absolute;
+  top: 545px;
+  left: 20px;
+  width: 149px;
+  font-family: monospace;
+  font-weight: bold;
+  color: white;
+  outline: 2px white solid;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 2s ease-out 100ms;
+  transition: color 2s ease-out 100ms;
+}
+}
+
 .header {
   position: fixed;
   text-align: center;
