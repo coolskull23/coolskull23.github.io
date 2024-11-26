@@ -30,7 +30,7 @@ html {
   z-index: 10;
 }
 
-.page-fisixve-head {
+.page-six-head {
   text-indent: -9999px;
   margin: 0px;
 }
@@ -68,7 +68,7 @@ html {
   color:black
 }
 
-/* Page five screen gets smaller */
+/* Page six screen gets smaller */
 @media only screen and (min-width: 0px) 
 and (max-width: 812px){
 .page-six-h1 {
