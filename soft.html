@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet"/>
+  <script src="app.js"></script>
+  <title>Pomodoro Timer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background-image: url("images/BackgroundFive.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: white;
+    }
+    #timer-display {
+      padding: 15% 0 0 0;
+      font-size: 3rem;
+    }
+    #start-stop-button {
+      font-size: 1.5rem;
+      padding: 10px 20px;
+      cursor: pointer;
+      border: none;
+      background-color: #505050;
+      color: white;
+      border-radius: 5px;
+    }
+    #start-stop-button:hover {
+      background-color: #626262;
+    }
+  </style>
+</head>
+<body>
+    <main>
+    
+        <div class="dropdown">
+          <div>
+          <button onclick="myFunction()" class="dropbtn">
+            <img src="images/hambuger.png" id="hambuger"/>
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#."><img src="images/hambuger.png" id="hambugers"/></a>
+            <a href="#page-ones">ABOUT US</a>
+            <hr class="line">
+            <a href="#page-twos">WHY FUEL CELL</a>
+            <hr class="line">
+            <a href="#page-threes">RESEARCH</a>
+            <hr class="line">
+            <a href="#page-fours">SOURCES</a>
+            <hr class="line">
+            <a href="#page-fives">OUR SOFTWARE</a>
+            <hr class="line">
+          </div>
+        </div>
+    
+      </main>
+  <div id="timer-display">00:00</div>
+  <button id="start-stop-button">Start</button>
+
+  <!-- Audio Elements -->
+  <audio id="workEndSound" src="Audio/Start.mp3"></audio>
+  <audio id="breakEndSound" src="Audio/Break.mp3"></audio>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      let timerDisplay = document.getElementById('timer-display');
+      let startStopButton = document.getElementById('start-stop-button');
+      let workEndSound = document.getElementById('workEndSound');
+      let breakEndSound = document.getElementById('breakEndSound');
+
+      let workTime = 30; // time
+      let breakTime = 10; // time
+      let isRunning = false;
+      let currentInterval = 'work';
+      let timer;
+      let countdownTime;
+
+      function startTimer() {
+        isRunning = true;
+        startStopButton.textContent = 'Stop';
+        timer = setInterval(updateCountdown, 1000);
+      }
+
+      function stopTimer() {
+        isRunning = false;
+        startStopButton.textContent = 'Start';
+        clearInterval(timer);
+      }
+
+      function updateCountdown() {
+        if (typeof countdownTime === 'undefined') {
+          countdownTime = (currentInterval === 'work') ? workTime : breakTime;
+        }
+
+        let minutes = Math.floor(countdownTime / 60);
+        let seconds = countdownTime % 60;
+
+        timerDisplay.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+
+        countdownTime--;
+
+        if (countdownTime < 0) {
+          playSound();
+          switchInterval();
+        }
+
+        // Background Image Switching (While Timer Running)
+        let body = document.body;
+        let currentImage = body.style.backgroundImage;
+
+        if (currentInterval === 'work') {
+          let newImage = (currentImage.includes('images/BackgroundOne.jpg'))
+            ? 'url("images/BackgroundTwo.jpg")'
+            : 'url("images/BackgroundOne.jpg")';
+          body.style.backgroundImage = newImage;
+
+        } else if (currentInterval === 'break') {
+          let newImage = (currentImage.includes('images/BackgroundThree.jpg'))
+            ? 'url("images/BackgroundFour.jpg")'
+            : 'url("images/BackgroundThree.jpg")';
+          body.style.backgroundImage = newImage;
+        }
+      }
+
+      function switchInterval() {
+        if (currentInterval === 'work') {
+          currentInterval = 'break';
+          countdownTime = breakTime;
+        } else {
+          currentInterval = 'work';
+          countdownTime = workTime;
+        }
+      }
+
+      function playSound() {
+        if (currentInterval === 'work') {
+          breakEndSound.play();
+        } else {
+          workEndSound.play();
+        }
+      }
+
+      // Background Image Switching
+      setInterval(() => {
+        if (!isRunning) {
+          document.body.style.backgroundImage = 'url("images/BackgroundFive.jpg")';
+        }
+      }, 1000);
+
+      startStopButton.addEventListener('click', () => {
+        isRunning ? stopTimer() : startTimer();
+      });
+    });
+  </script>
+</body>
+</html>
